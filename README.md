@@ -1,2 +1,3 @@
-# Project-3
+# Project-3#
 Final project for the SMU Trilogy CodingBootCamp
+##HotelManagementSite###
