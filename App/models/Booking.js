@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const BookingSchema = new Schema({
-    canceled: Boolean,
+    cancelled: Boolean,
     arrival: Date,
     checkout: Date,
     RoomId: {

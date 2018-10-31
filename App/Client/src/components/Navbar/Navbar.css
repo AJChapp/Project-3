@@ -1,3 +1,6 @@
 .myNav{
     list-style: none;
 }
+.active{
+    color: white;
+}

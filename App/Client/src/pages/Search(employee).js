@@ -1,10 +1,11 @@
 import React from "react";
-import RoomSearch from '../components/RoomSearch/RoomSearch.js';
 
-const Search = () =>(
-    <RoomSearch/>
-)
+const SearchEmployee = () => {
+    return (
+        <div>Employee search</div>
+    )
+}
 // search guests by last name /and/DOB
 // 
 // local attractions
-export default Search
+export default SearchEmployee

@@ -1,9 +1,9 @@
-const axios = require('axios');
+import axios from 'axios'
 
 
 export default {
     getRooms:function(){
-        return axios.get("/search/api/static");
+        return axios.get("/search/api/roomsearch");
     },
    
 }
