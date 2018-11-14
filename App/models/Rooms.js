@@ -3,14 +3,15 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const RoomsSchema = new Schema({
-    roomNumber: Number,
-    vacant : Boolean,
+    roomNumber: {type: Number, required: true, index:{unique:true}},
+    booked : [String],
+    maxAdult: Number,
     nonSmoking: Boolean,
     rate: Number,
-    maxAdult: Number,
     view:{
         type:String
     },
+    squareFt: Number,
     numOfBeds:{
         king: Number,
         queen: Number,

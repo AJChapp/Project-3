@@ -9,15 +9,15 @@ const Navbar = props => (
 
             <Link to="/" className="nav-link">
                 Home
-          </Link>
+            </Link>
         </li>
-        <li className={window.location.pathname === "/events"
+        <li className={window.location.pathname === "/findroom"
             ? "nav-item active"
             : "nav-item"}>
 
-            <Link to="/events" className="nav-link">
-                Events
-          </Link>
+            <Link to="/findroom" className="nav-link">
+                Find an Open Room
+            </Link>
         </li>
         <li className={window.location.pathname === "/about"
             ? "nav-item active"
@@ -25,15 +25,36 @@ const Navbar = props => (
 
             <Link to="/about" className="nav-link">
                 About Us
-          </Link>
+            </Link>
         </li>
-        <li className={window.location.pathname === "/login"
+        {
+            props.user ?
+                <li className={window.location.pathname === "/UserPage"
+                    ? "nav-item active"
+                    : "nav-item"}>
+
+                    <Link to="/UserPage" className="nav-link">
+                        My Profile
+                    </Link>
+                </li>
+                ://or
+                <li className={window.location.pathname === "/login"
+                    ? "nav-item active"
+                    : "nav-item"}>
+
+                    <Link to="/login" className="nav-link">
+                        Login
+                    </Link>
+                </li>
+        }
+        {/* 
+         <li className={window.location.pathname === "/events"
             ? "nav-item active"
             : "nav-item"}>
 
-            <Link to="/login" className="nav-link">
-                Login
-          </Link>
+            <Link to="/events" className="nav-link">
+                Events
+            </Link>
         </li>
         <li className={window.location.pathname === "/search"
             ? "nav-item active"
@@ -50,15 +71,7 @@ const Navbar = props => (
             <Link to="/payroll" className="nav-link">
                 Payroll(Employee Only)
           </Link>
-        </li>
-        <li className={window.location.pathname === "/findroom"
-            ? "nav-item active"
-            : "nav-item"}>
-
-            <Link to="/findroom" className="nav-link">
-                Find an Open Room
-          </Link>
-        </li>
+        </li> */}
 
     </ul>
 )

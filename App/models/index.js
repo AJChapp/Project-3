@@ -5,6 +5,7 @@ module.exports = {
     EmployeePay: require('./EmployeePay'),
     Employee: require('./Employee'),
     ConfrenceHall: require('./ConfrenceHall'),
-    Booking: require('./Booking')
+    Booking: require('./Booking'),
+    User: require('./User.js')
 
   };
