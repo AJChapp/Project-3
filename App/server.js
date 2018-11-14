@@ -25,8 +25,8 @@ app.use(passport.session());
 genRoutes(app);
 loginRoutes(app, passport);
 PassPort(passport);
-
-mongoose.connect("mongodb://localhost/project3");
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/project3'
+mongoose.connect(mongoURI);
 
 app.listen(PORT, function () {
   console.log(`App running on port ${PORT}!`);
